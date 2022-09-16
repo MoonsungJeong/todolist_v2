@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Todolist VanillaJS</title>
+
+        <!-- Basic site meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- Social media meta -->
+        <meta property="title" content="Todolist VanillaJS">
+        <meta property="description" content="The example of Moonsung Jeong, Web Developer">
+        <!-- css files -->
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/23c505e967.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <noscript>
+            <strong>
+                Moonsung Jeong, Web Developer.
+                This example is built with VanillaJS.
+            </strong>
+        </noscript>
+        <div class="todolist" id="apple">
+            <div class="box-title flex2">
+                <h2 class="head-list">
+                    Todolist
+                </h2>
+                <div class="btn-list">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="box-body line-top">
+                <div class="box-input flex">
+                    <!-- <i class="fas fa-tasks"> -->
+                    <div class="btn-complete-all _opacity05 _col_xs-10 _center"><i class="fas fa-list-ul"></i></div>
+                    <div class="bar-input _col_xs-80 _padding-x"><input class="text-input" type="text" placeholder="What needs to be done?"></div>
+                    <div class="btn-add _opacity05 _col_xs-10 _center"><i class="far fa-plus-square"></i></div>
+                </div>
+                <div class="box-list">
+                    <ul class="list container">
+                    </ul>
+                    <div class="box-menu hide line-top">
+                        <div class="item-monitor _col_xs-20 _small _center">3 items left</div>
+                        <div class="box-filter _col_xs-40 _small _center"><span class="all selected _padding-01"><i>all</i></span><span class="active line _padding-01"><i>active</i></span><span class="completed line _padding-01"><i>completed</i></span></div>
+                        <div class="btn-clear _col_xs-25 _small _center"><i>clear completed</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="lib.js"></script>
+        <script src="todo.js"></script>
+    </body>
+</html>
